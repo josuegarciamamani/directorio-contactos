@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f4;
+    color: #26312f;
+}
+
+.contenedor {
+    width: 550px;
+    max-width: 90%;
+    margin: 35px auto;
+    padding: 40px;
+    background: white;
+    border: 1px solid #dfe4e2;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d9dfdc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #28786b;
+}
+
+button {
+    width: fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 9px;
+    background: #28786b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #206458;
+}
+
+#buscador {
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.lista {
+    min-height: 105px;
+}
+
+#mensajeVacio {
+    text-align: center;
+    color: #6f7976;
+    margin: 48px 0;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e5e3;
+    border-radius: 10px;
+    background: #fafcfb;
+}
+
+.datos strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.datos span {
+    color: #68736f;
+}
+
+.btn-eliminar {
+    background: #b84b4b;
+    padding: 9px 14px;
+    font-size: 14px;
+}
+
+.btn-eliminar:hover {
+    background: #963b3b;
+}
+
+.separador {
+    height: 1px;
+    background: #dfe4e2;
+    margin-top: 20px;
+}
+
+.contador {
+    color: #69736f;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .contacto {
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
